@@ -46,4 +46,4 @@ jobs:
       #   id: Destroy
       #   run: terraform destroy -auto-approve
       #   continue-on-error: true
-      #   working-directory: ./infrastructure
+      #   working-directory: ./infrastructure/
