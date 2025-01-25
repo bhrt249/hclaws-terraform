@@ -23,11 +23,11 @@ jobs:
           terraform --version
           terraform fmt
         continue-on-error: true
-        working-directory: ./infrastructure
+        # working-directory: ./infrastructure
       - name: Terraform Init
         id: init
         run: terraform init
-        working-directory: ./infrastructure
+        # working-directory: ./infrastructure
       - name: Terraform Validate
         id: validate
         run: terraform validate -no-color  
