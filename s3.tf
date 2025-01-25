@@ -51,7 +51,7 @@ resource "aws_s3_bucket" "my_bucket1" {
 }
 
 # Enable versioning
-resource "aws_s3_bucket_versioning" "versioning" {
+resource "aws_s3_bucket_versioning" "versioning1" {
   bucket = aws_s3_bucket.my_bucket1.id
 
   versioning_configuration {
@@ -60,7 +60,7 @@ resource "aws_s3_bucket_versioning" "versioning" {
 }
 
 # Enable server-side encryption
-resource "aws_s3_bucket_server_side_encryption_configuration" "encryption" {
+resource "aws_s3_bucket_server_side_encryption_configuration" "encryption1" {
   bucket = aws_s3_bucket.my_bucket1.id
 
   rule {
@@ -71,7 +71,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "encryption" {
 }
 
 # Block public access
-resource "aws_s3_bucket_public_access_block" "public_access" {
+resource "aws_s3_bucket_public_access_block" "public_access1" {
   bucket = aws_s3_bucket.my_bucket1.id
 
   block_public_acls       = true
